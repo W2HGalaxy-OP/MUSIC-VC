@@ -19,8 +19,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 import os
 os.system("pip install nodejs")
 os.system("pip install py-tgcalls==0.8.1rc1")
-os.system("git clone https://github.com/pyrogram/pyrogram")
-os.system("git clone git+https://github.com/asmsafone/downloader")
+os.system("git+https://github.com/pyrogram/pyrogram")
+os.system("git+https://github.com/asmsafone/downloader")
 import json
 import asyncio
 from config import config
