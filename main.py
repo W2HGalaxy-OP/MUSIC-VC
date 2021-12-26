@@ -630,4 +630,4 @@ async def left_vc(_, chat_id: int):
 
 
 print("Music Player UserBot Started!")
-pytgcalls.run()
+pytgcalls.run_until_disconnected()
