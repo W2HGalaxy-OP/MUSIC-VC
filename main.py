@@ -52,9 +52,9 @@ from core.decorators import register, language, handle_error, only_admins
 
 
 REPO = """
-🤖 **Music Player**
+ **Music Player**
 - Repo: [GitHub](https://github.com/AsmSafone/MusicPlayer)
-- License: AGPL-3.0-or-later
+- Owner: @The_LegendBoy
 """
 
 
