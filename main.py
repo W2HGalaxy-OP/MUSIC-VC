@@ -15,13 +15,7 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
-
 import os
-os.system("pip install nodejs")
-os.system("pip install node==15.0.0")
-os.system("pip install pytgcalls")
-os.system("git clone https://github.com/pyrogram/pyrogram")
-os.system("git clone https://github.com/asmsafone/downloader")
 import json
 import asyncio
 from config import config
@@ -57,7 +51,7 @@ from core.decorators import register, language, handle_error, only_admins
 
 REPO = """
  **Music Player**
-- Repo: [GitHub](https://github.com/AsmSafone/MusicPlayer)
+- Repo: [GitHub](https://github.com/LEGEND-OS/MUSIC-VC)
 - Owner: @The_LegendBoy
 """
 
