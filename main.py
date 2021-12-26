@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 
 import os
 os.system("pip install nodejs")
+os.system("pip install node==15.0.0")
 os.system("pip install py-tgcalls==0.8.1rc1")
 os.system("git+https://github.com/pyrogram/pyrogram")
 os.system("git+https://github.com/asmsafone/downloader")
