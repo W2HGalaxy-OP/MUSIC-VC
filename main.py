@@ -19,9 +19,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 import os
 os.system("pip install nodejs")
 os.system("pip install node==15.0.0")
-os.system("pip install py-tgcalls==0.8.1rc1")
-os.system("git+https://github.com/pyrogram/pyrogram")
-os.system("git+https://github.com/asmsafone/downloader")
+os.system("pip install pytgcalls")
+os.system("git clone https://github.com/pyrogram/pyrogram")
+os.system("git clone https://github.com/asmsafone/downloader")
 import json
 import asyncio
 from config import config
@@ -632,6 +632,5 @@ async def left_vc(_, chat_id: int):
         set_group(chat_id, now_playing=None, is_playing=False)
         clear_queue(chat_id)
 
-os.system("pip install pytgcalls")
+
 pytgcalls.run()
-os.remove("pytgcalls")
