@@ -1,14 +1,11 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs16
+FROM legend-os/musicbot:latest
 
-RUN apt update && apt upgrade -y
-RUN apt install git curl python3-pip ffmpeg -y
+RUN git clone https://github.com/LEGEND-OS/MUSIC-VC.git /root
 
-RUN cd /
-RUN git clone https://github.com/LEGEND-OS/MUSIC-VC
-RUN cd MUSIC-VC
-WORKDIR /MUSIC-VC
+WORKDIR /root
 
-RUN pip3 install --upgrade pip
 RUN pip3 install -U -r requirements.txt
 
-CMD python3 main.py
+ENV PATH="/home/bin:$PATH"
+
+CMD ["python3", "main.py"]
